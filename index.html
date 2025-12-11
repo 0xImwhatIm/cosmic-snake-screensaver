@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宇宙貪食蛇 - Toothless Crystal Edition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="ui-layer">
+        <div id="intro-screen" class="text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-white to-purple-300" style="filter: drop-shadow(0 0 10px rgba(255,255,255,0.8));">
+                TOOTHLESS DANCE
+            </h1>
+            <p class="text-cyan-100 mb-8 tracking-widest text-sm opacity-80">CRYSTAL EDITION // MAX BPM 500</p>
+            <button id="start-btn">開始播放</button>
+        </div>
+        <div id="hud" class="hidden absolute top-4 left-4 text-left">
+            <div class="hud-text text-xl">BPM: <span id="bpm-display">100</span></div>
+            <div class="hud-text text-sm opacity-70">PHASE: <span id="phase-display">ACCELERATING</span></div>
+        </div>
+    </div>
+
+    <canvas id="gameCanvas"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
